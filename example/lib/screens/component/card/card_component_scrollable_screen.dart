@@ -51,7 +51,7 @@ class CardComponentScrollableScreen extends StatelessWidget {
                           children: [
                             const Text('Card number: 5555 3412 4444 1115'),
                             GestureDetector(
-                              onTap: () => Clipboard.setData(ClipboardData(text: '5555 3412 4444 1115')),
+                              onTap: () => Clipboard.setData(const ClipboardData(text: '5555 3412 4444 1115')),
                               child: const Icon(Icons.copy),
                             ),
                           ],

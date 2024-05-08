@@ -2,7 +2,13 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Adyen-flutter-mobile",
+            "name": "Web",
+            "request": "launch",
+            "type": "dart",
+            "args": ["-d", "chrome", "--web-port", "8000", "--web-renderer", "canvaskit","--dart-define-from-file", "secrets.json"]
+          },
+        {
+            "name": "Native",
             "request": "launch",
             "type": "dart",
             "args": ["--dart-define-from-file", "secrets.json"]
